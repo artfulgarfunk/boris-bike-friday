@@ -1,5 +1,7 @@
 require 'boris'
 
 describe DockingStation do
-  it { expect(DockingStation.respond_to?('release_bike')).to eq false }
+  it "releases a bike" do
+    expect(subject).to respond_to(:release_bike)
+  end
 end
