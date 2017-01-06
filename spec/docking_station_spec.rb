@@ -8,7 +8,6 @@ describe DockingStation do
 
   it "checks if bike exists and is working" do
     bike = subject.release_bike
-    #expect(bike).not_to eq nil
     expect(bike).to be_working
   end
 end
